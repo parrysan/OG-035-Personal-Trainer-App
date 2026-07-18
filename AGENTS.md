@@ -42,7 +42,7 @@ created: "2026-07-18"
 | **Project docs** | `./docs/` |
 | **Vault project page** | `Open-Memory-Vault/projects/OG-035-Personal-Trainer-App/README.md` |
 | **GitHub repo** | https://github.com/parrysan/OG-035-Personal-Trainer-App |
-| **External systems** | none yet — OG-Research Drive store pending |
+| **External systems** | OG-Research Drive store: [OG-035-Personal-Trainer-App](https://drive.google.com/drive/folders/1UuxTymeVgOl5eEoN-RAuG0ZVfzp4IYVP) (research, assets, deliverables) |
 
 ---
 
@@ -50,10 +50,12 @@ created: "2026-07-18"
 
 > **Operational facts that should never have to be re-discovered.** Deployed URLs, store handles, theme IDs, API endpoints, credentials *location* (never the credentials themselves — those live in the global `.env`, see global AGENT.md §2.5). Update this section whenever a fact changes — it is the canonical source.
 
+- **GitHub**: https://github.com/parrysan/OG-035-Personal-Trainer-App
+- **NotebookLM**: (not provisioned — add later via notebook_push.py provision)
 - **Production URL**: (tbd)
 - **Staging / preview URL**: (tbd)
 - **Platform handle / project ID**: (tbd)
-- **Other identifiers**: (tbd)
+- **Client area**: `docs/client-area/` (Overview + Research seeded; Client Area style)
 - **Credentials**: stored in global `.env` under `OG_035_*` (none yet)
 
 ---
