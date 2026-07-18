@@ -1,0 +1,26 @@
+/* Print stylesheet for the client routine view (the spreadsheet replacement).
+   Loaded globally; rules are scoped to print media so they never affect screen. */
+
+@media print {
+  /* Hide the tool chrome — only the routine prints */
+  header,
+  nav,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .client-view {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .client-view li {
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+}
