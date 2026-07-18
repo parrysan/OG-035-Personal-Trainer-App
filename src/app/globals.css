@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* OS-000 foundation (copied per OS-000 USAGE.md — copy-and-adapt model) */
+@import "../styles/tokens-base.css";
+@import "../styles/tokens-theme-oganiko.css";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), var(--font-primary);
+  --font-mono: var(--font-geist-mono), var(--font-mono);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}

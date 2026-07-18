@@ -1,0 +1,72 @@
+/* ═══════════════════════════════════════════════════════════════
+   OS-000 Theme: OGANIKO
+   Brand colours and semantic mappings for OGANIKO projects.
+   Import AFTER base.css. Override individual values per project.
+   ═══════════════════════════════════════════════════════════════ */
+
+@theme {
+  /* ── Brand Palette ────────────────────────────────────────── */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-green: #109200;        /* brand signature — always present */
+  --color-leaf: #34C755;         /* CTAs, interactive elements */
+  --color-gold: #EECA25;         /* premium, highlights, honey identity */
+
+  /* ── Secondary Accents (use sparingly) ────────────────────── */
+  --color-gray-dark: #333333;
+  --color-olive: #6B8E23;
+  --color-brown: #8B4513;
+  --color-orange-soft: #FFA07A;
+  --color-sage: #9CAF88;
+  --color-lavender: #9370DB;
+
+  /* ── Semantic: Backgrounds ────────────────────────────────── */
+  --color-bg: var(--color-white);
+  --color-bg-secondary: #F8F8F6;
+  --color-bg-card: var(--color-white);
+  --color-bg-muted: #F5F5F3;
+
+  /* ── Semantic: Text ───────────────────────────────────────── */
+  --color-text: var(--color-black);
+  --color-text-secondary: var(--color-gray-dark);
+  --color-text-muted: #777777;
+  --color-text-inverse: var(--color-white);
+
+  /* ── Semantic: Interactive ─────────────────────────────────── */
+  --color-accent: var(--color-green);
+  --color-cta: var(--color-leaf);
+  --color-cta-hover: #2DB84A;
+  --color-highlight: var(--color-gold);
+
+  /* ── Semantic: Borders ────────────────────────────────────── */
+  --color-border: #E0E0E0;
+  --color-border-subtle: rgba(0, 0, 0, 0.06);
+  --color-border-focus: var(--color-leaf);
+
+  /* ── Semantic: Inverse (dark) surfaces ── introduced by os-002 tabs/header-nav-dark ── */
+  --color-text-inverse-muted: #CCCCCC;   /* secondary text on dark surfaces */
+  --color-bg-inverse-hover: #1C1C1C;     /* hover fill on dark surfaces */
+
+  /* ── Semantic: States ─────────────────────────────────────── */
+  --color-success: var(--color-leaf);
+  --color-warning: var(--color-gold);
+  --color-error: #E53E3E;
+  --color-info: #3182CE;
+}
+
+/* ── Dark Mode ──────────────────────────────────────────────── */
+[data-theme="dark"],
+.dark {
+  --color-bg: #0A0A0A;
+  --color-bg-secondary: #111111;
+  --color-bg-card: #1A1A1A;
+  --color-bg-muted: #222222;
+  --color-text: #F5F5F5;
+  --color-text-secondary: #BBBBBB;
+  --color-text-muted: #888888;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}

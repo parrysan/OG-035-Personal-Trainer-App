@@ -9,6 +9,9 @@ functions/lib/
 .next/
 .nuxt/
 .output/
+out/
+*.tsbuildinfo
+next-env.d.ts
 
 # Environment — secrets live in the GLOBAL .env at agent-config/.env, never per-project
 .env
